@@ -7,7 +7,7 @@ import {
 import { admin } from "./admin";
 import { sql } from "drizzle-orm";
 
-export const adminToken = table("admin_tokens", {
+export var adminToken = table("admin_tokens", {
   id: integer("id").primaryKey().notNull(),
   value: text("value").notNull(),
   adminId: integer("admin_id")

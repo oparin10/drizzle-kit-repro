@@ -7,7 +7,7 @@ import {
 import { candidate } from "./candidate";
 import { sql } from "drizzle-orm";
 
-export const passwordToken = table("password_token", {
+export var passwordToken = table("password_token", {
   id: integer("id").primaryKey().notNull(),
   value: text("value").notNull(),
   candidateId: integer("candidate_id")

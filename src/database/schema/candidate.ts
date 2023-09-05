@@ -7,7 +7,7 @@ import {
 import { tokens } from "./tokens";
 import { passwordToken } from "./password_token";
 
-export const candidate = table("candidates", {
+export var candidate = table("candidates", {
   id: integer("id").primaryKey().notNull(),
   username: text("username").notNull(),
   phoneNumber: text("phone_number").notNull(),

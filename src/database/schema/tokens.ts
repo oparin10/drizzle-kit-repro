@@ -7,7 +7,7 @@ import {
 import { candidate } from "./candidate";
 import { sql } from "drizzle-orm";
 
-export const tokens = table("tokens", {
+export var tokens = table("tokens", {
   id: integer("id").primaryKey().notNull(),
   value: text("value").notNull(),
   candidateId: integer("candidate_id")
